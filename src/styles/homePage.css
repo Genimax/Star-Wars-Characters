@@ -1,0 +1,70 @@
+.homepage-body {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - var(--header-height));
+  width: 100%;
+  background: linear-gradient(180deg, #1f2a63 0%, #17002f 100%);
+  box-sizing: border-box;
+  border-top: 3px solid rgba(255, 255, 255, 0.377);
+}
+
+.homepage-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: var(--page-width);
+}
+
+.home-image {
+  width: 647px;
+  user-select: none;
+  -webkit-user-drag: none;
+  animation-duration: 5s;
+  animation-name: yoda;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.home-title {
+  max-width: 515px;
+  font-size: 4rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 64px;
+}
+
+.title-bold {
+  font-weight: 600;
+}
+
+.home-description {
+  max-width: 475px;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 64px;
+}
+
+@keyframes yoda {
+  0% {
+    rotate: 3deg;
+  }
+
+  25% {
+    scale: 102%;
+  }
+
+  50% {
+    rotate: -3deg;
+  }
+
+  75% {
+    scale: 98%;
+  }
+
+  100% {
+    rotate: 3deg;
+  }
+}

@@ -1,0 +1,36 @@
+.error-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  width: 100vw;
+  background: #17002f;
+}
+
+.error-image {
+  width: 500px;
+  height: 500px;
+  z-index: 2;
+  user-select: none;
+}
+
+.error-code {
+  font-size: 700px;
+  position: absolute;
+  z-index: 1;
+  color: #e6e9ed;
+  user-select: none;
+}
+
+.return-button-link {
+  position: absolute;
+  bottom: 5%;
+  z-index: 3;
+}
+
+.error-button {
+  color: #212121;
+  background: #73d677;
+  box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+}
