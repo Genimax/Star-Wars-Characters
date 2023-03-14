@@ -5,6 +5,7 @@ export const filters = [
     options: [
       { value: "male", label: "Male" },
       { value: "female", label: "Female" },
+      { value: "hermaphrodite", label: "Hermaphrodite" },
     ],
   },
   {

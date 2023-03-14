@@ -10,7 +10,7 @@ const CardPreview = (props) => {
         return (
           <div
             key={feature}
-            className={`card-feature card-preview-${feature}`}
+            className={`card-feature card-preview-${feature} ${props.card[feature]}`}
           >
             {props.card[feature]}
           </div>

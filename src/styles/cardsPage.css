@@ -58,14 +58,14 @@
 
 .cards-container {
   padding-top: 25px;
-  margin-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(3, 30%);
   grid-column-gap: 4.33%;
-  grid-row-gap: 0.3%;
+  grid-row-gap: 5px;
   justify-items: stretch;
   opacity: 0;
   animation: ani 1.5s forwards;
+  margin-bottom: 200px;
 }
 
 @keyframes ani {
@@ -155,8 +155,18 @@
   background-color: #07d6f2;
 }
 
+.female {
+  background-color: #c956ff;
+}
+
+.hermaphrodite {
+  background-color: #f5db13;
+}
+
 .scroll-loader {
-  position: absolute;
+  width: 150px;
+  height: 150px;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,9 +176,16 @@
   margin-right: auto;
   right: 0;
   left: 0;
-  bottom: 20px;
+  bottom: 30px;
   animation: ani 1.5s forwards;
 }
+
+.main-loader {
+  margin-top: auto;
+  margin-bottom: auto;
+  bottom: 30%;
+}
+
 .loader {
   max-width: 15rem;
   width: 100%;
@@ -213,4 +230,13 @@ circle:nth-of-type(4) {
   50% {
     transform: rotate(360deg);
   }
+}
+
+.fetch-error-message {
+  opacity: 20%;
+  font-size: 200px;
+  position: fixed;
+  align-self: center;
+  justify-self: center;
+  bottom: 35%;
 }
