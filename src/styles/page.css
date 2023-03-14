@@ -11,6 +11,7 @@ body {
   min-height: 100svh;
   min-width: 100svw;
   position: relative;
+  overflow-x: hidden;
 }
 
 * {
