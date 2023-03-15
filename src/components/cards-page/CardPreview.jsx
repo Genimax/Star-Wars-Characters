@@ -1,49 +1,18 @@
+import {
+  featureCheck,
+  statsCheck,
+} from "../../renderers/cardFeaturesRenderer";
+
 const CardPreview = (props) => {
-  const featureCheck = () => {
-    const features = ["birth_year", "gender"];
-
-    return features.map((feature) => {
-      if (
-        props.card[feature] !== "n/a" &&
-        props.card[feature] !== "unknown"
-      ) {
-        return (
-          <div
-            key={feature}
-            className={`card-feature card-preview-${feature} ${props.card[feature]}`}
-          >
-            {props.card[feature]}
-          </div>
-        );
-      }
-    });
-  };
-
-  const statsCheck = () => {
-    const stats = ["mass", "height"];
-
-    return stats.map((stat) => {
-      if (
-        props.card[stat] !== "n/a" &&
-        props.card[stat] !== "unknown"
-      ) {
-        return (
-          <div className="card-preview-stat" key={stat}>
-            <div className="card-preview-stat-number">
-              <p>{props.card[stat]}</p>
-            </div>
-            <p>{stat}</p>
-          </div>
-        );
-      }
-    });
-  };
-
   return (
-    <div className="card-preview">
+    <div className="card-preview" onClick={props.onClick}>
       <h3 className="card-preview-name">{props.card.name}</h3>
-      <div className="card-preview-stats">{statsCheck()}</div>
-      <div className="card-preview-labels">{featureCheck()}</div>
+      <div className="card-preview-stats">
+        {statsCheck(props.card)}
+      </div>
+      <div className="card-preview-labels">
+        {featureCheck(props.card)}
+      </div>
     </div>
   );
 };

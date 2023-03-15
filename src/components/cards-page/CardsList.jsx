@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import swapi from "../../api/swapi";
 import CardPreview from "./CardPreview";
+import CardModule from "./CardModule";
 
 const CardsList = (props) => {
   const [profiles, setProfiles] = useState([]);
@@ -10,6 +11,7 @@ const CardsList = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [fetching, setFetching] = useState(true);
   const [totalCount, setTotalCount] = useState(0);
+  const [moduleWindow, setModuleWindow] = useState(null);
 
   useEffect(() => {
     const scrollHandler = (e) => {
@@ -68,13 +70,21 @@ const CardsList = (props) => {
         }
       }
 
-      return <CardPreview key={card.name} card={card} />;
+      return (
+        <CardPreview
+          key={card.name}
+          card={card}
+          onClick={() => setModuleWindow(card)}
+        />
+      );
     });
 
     if (errorDuringFetching)
       return <h2 className="fetch-error-message">ERROR</h2>;
     return renderedCards;
   };
+
+  console.log(moduleWindow);
 
   const loadingRender = () => {
     const className = `scroll-loader ${
@@ -99,7 +109,12 @@ const CardsList = (props) => {
 
   return (
     <>
+      <CardModule
+        profile={moduleWindow}
+        onReset={() => setModuleWindow(null)}
+      />
       <div className="cards-container">{cardsRender()}</div>
+
       {loadingRender()}
     </>
   );

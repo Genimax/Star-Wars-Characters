@@ -8,7 +8,6 @@ const CardsFilter = (props) => {
       backgroundColor: "#F2F2F2",
       width: "135px",
       height: "23px",
-      height: "23px",
       maxHeight: "23px",
     }),
   };
