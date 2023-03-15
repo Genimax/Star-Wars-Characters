@@ -63,7 +63,6 @@
   grid-column-gap: 4.33%;
   grid-row-gap: 5px;
   justify-items: stretch;
-  opacity: 0;
   margin-bottom: 200px;
 }
 
@@ -77,8 +76,6 @@
   filter: drop-shadow(4px 4px 4px rgba(33, 33, 33, 0.1));
   cursor: pointer;
   transition: transform 0.3s ease-out;
-  opacity: 0;
-  animation: ani 1.5s forwards;
 }
 
 .card-preview:hover {
