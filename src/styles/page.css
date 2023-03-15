@@ -49,8 +49,15 @@ a {
   transform: scale(98%);
 }
 
-@media (max-width: 900px) {
-  .cards-container {
-    grid-template-columns: repeat(2, 60%);
+@keyframes ani {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+img {
+  animation: ani 2.5s forwards;
 }
