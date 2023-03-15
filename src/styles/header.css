@@ -15,8 +15,7 @@ header {
 }
 
 .header-logo {
-  max-width: 150px;
-  max-height: 80px;
+  width: 8rem;
   -webkit-user-drag: none;
   transition: filter 0.3s ease-out;
 }

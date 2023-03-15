@@ -84,8 +84,6 @@ const CardsList = (props) => {
     return renderedCards;
   };
 
-  console.log(moduleWindow);
-
   const loadingRender = () => {
     const className = `scroll-loader ${
       profiles.length === 0 ? "main-loader" : ""

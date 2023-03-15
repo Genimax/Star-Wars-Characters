@@ -9,14 +9,15 @@
 }
 
 .error-image {
-  width: 500px;
-  height: 500px;
+  width: 40vw;
+  height: 40vw;
+  max-height: 700px;
   z-index: 2;
   user-select: none;
 }
 
 .error-code {
-  font-size: 700px;
+  font-size: Min(900px, 50vw);
   position: absolute;
   z-index: 1;
   color: #e6e9ed;

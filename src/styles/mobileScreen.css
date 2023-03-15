@@ -1,0 +1,132 @@
+@media (max-width: 1084px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 46.66%);
+  }
+
+  .module-window-container {
+    width: 80%;
+  }
+
+  .module-title {
+    max-width: 80%;
+  }
+
+  .homepage-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-image {
+    padding-top: 10vh;
+    width: 40vw;
+    animation: none;
+    margin-bottom: 10vh;
+  }
+
+  .homepage-body {
+    height: auto;
+    min-height: 100dvh;
+  }
+
+  .home-title {
+    padding-top: 25px;
+    font-size: 7vw;
+    margin-bottom: 7vw;
+    text-align: center;
+  }
+
+  .home-description {
+    text-align: center;
+  }
+
+  .home-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 95.33%);
+  }
+
+  .module-title {
+    text-align: center;
+  }
+
+  .module-window-container {
+    height: 70%;
+    width: 80%;
+  }
+
+  .module-window {
+    flex-direction: column;
+  }
+
+  .left-module-container {
+    width: 100%;
+    height: 30%;
+  }
+  .right-module-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .profile-image {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .features-container {
+    width: calc(100% - 20px);
+    right: 0;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+
+  .features-container > .card-feature {
+    margin: 0;
+  }
+
+  .description-container {
+    min-height: 80px;
+    width: 80%;
+  }
+
+  .module-stats-container {
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  .module-title {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-block {
+    justify-content: space-around;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-option:first-child {
+    margin: 0;
+  }
+}

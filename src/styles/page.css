@@ -9,7 +9,7 @@ body {
   --page-width: 80%;
   --header-height: 90px;
   min-height: 100svh;
-  min-width: 100svw;
+
   position: relative;
   overflow-x: hidden;
 }
@@ -47,4 +47,10 @@ a {
 
 .basic-button:active {
   transform: scale(98%);
+}
+
+@media (max-width: 900px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 60%);
+  }
 }
