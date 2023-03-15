@@ -64,7 +64,6 @@
   grid-row-gap: 5px;
   justify-items: stretch;
   opacity: 0;
-  animation: ani 1.5s forwards;
   margin-bottom: 200px;
 }
 
